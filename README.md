@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/ydd3a41sospypxri?svg=true)](https://ci.appveyor.com/project/lioness1741/ahj-homeworks-animation)
