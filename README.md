@@ -1,1 +1,1 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/ydd3a41sospypxri?svg=true)](https://ci.appveyor.com/project/lioness1741/ahj-homeworks-animation)
+[![Build status](https://ci.appveyor.com/api/projects/status/g0v3twk9w9a8c0jj?svg=true)](https://ci.appveyor.com/project/lioness1741/ahj-homeworks-geolocation)
