@@ -66,10 +66,12 @@ module.exports = {
     ],
   },
 
+  /*
   devServer: {
     host: '127.0.0.1',
     open: true,
     contentBase: path.resolve(__dirname, './src/index.js'),
     watchContentBase: true,
   },
+  */
 };
