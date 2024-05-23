@@ -10,16 +10,16 @@ module.exports = {
   entry: './src/index.js',
   mode: 'development',
   output: {
-    filename: 'bundle.js',
+    filename: 'bundle.js'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin({}),
     new webpack.ProgressPlugin(),
     new MiniCssExtractPlugin({ filename: 'main.[contenthash].css' }),
     new HtmlWebpackPlugin({
-      template: 'index.html',
+      template: 'index.html'
     }),
-    new ESLintPlugin(),
+    new ESLintPlugin()
   ],
 
   module: {
@@ -27,7 +27,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         include: [path.resolve(__dirname, 'src')],
-        loader: 'babel-loader',
+        loader: 'babel-loader'
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
@@ -35,7 +35,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: 'src/images/[name].[ext]',
+              name: 'src/images/[name].[ext]'
             },
           },
         ],
@@ -45,20 +45,20 @@ module.exports = {
 
         use: [
           {
-            loader: MiniCssExtractPlugin.loader,
+            loader: MiniCssExtractPlugin.loader
           },
           {
             loader: 'css-loader',
 
             options: {
-              sourceMap: true,
+              sourceMap: true
             },
           },
           {
             loader: 'sass-loader',
 
             options: {
-              sourceMap: true,
+              sourceMap: true
             },
           },
         ],
@@ -66,12 +66,10 @@ module.exports = {
     ],
   },
 
-  /*
   devServer: {
     host: '127.0.0.1',
     open: true,
     contentBase: path.resolve(__dirname, './src/index.js'),
-    watchContentBase: true,
-  },
-  */
+    watchContentBase: true
+  }
 };
